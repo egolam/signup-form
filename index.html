@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <aside>
+        <div class="logo-flex">
+            <img src="assets/odin-lined.png" alt="logo">
+            <h1>ODIN</h1>
+        </div>
+    </aside>
+    
+    <article class="main-content">
+        <section class="info">
+            <p class="info-text">This is not real online service! You know you need something <br>like this in your life to help you realize
+                your deepest dreams. <br>Sign up <i>now</i> to get started.</p>
+            <p class="info-desired">You <i>know</i> you want to.</p>
+        </section>
+        
+        <section class="form-section">
+            <h2>Let's do this!</h2>
+            <form action="POST" id="signup-form">
+            
+            
+                <div class="form-flex">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </div>
+
+                <div class="form-flex">
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" id="phone-number" required>
+                    </div>
+                </div>
+
+                <div class="form-flex">
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password"required>
+                    </div>
+                </div>
+            
+                
+            </form>
+        </section>
+        
+        <section class="create-account">
+            <button type="submit" form="signup-form">Create Account</button>
+            <div>
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
+        </section>
+    </article>
+
+</body>
+
+</html>
